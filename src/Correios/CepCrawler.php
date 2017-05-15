@@ -67,8 +67,8 @@ class CepCrawler
                 'state' => trim($cityState[1])
             ];
 
-        } else {
-            return ['error' => 'Not found address'];
         }
+
+        return ['error' => 'Not found address'];
     }
 }
