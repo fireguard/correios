@@ -1,7 +1,7 @@
 {
     "name": "fireguard/correios",
     "description": "Utilities for interaction with the post office of Brazil",
-    "keywords": ["correios"],
+    "keywords": ["correios", "crawler"],
     "license": "MIT",
     "type": "project",
     "require": {
@@ -9,9 +9,17 @@
         "fabpot/goutte": "^3.2",
         "symfony/http-foundation": "^3.2"
     },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0"
+    },
     "autoload": {
         "psr-4": {
-            "Fireguard\\Correios\\": "src/"
+            "Fireguard\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/"
+        ]
     }
 }
