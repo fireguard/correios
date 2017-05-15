@@ -1,0 +1,17 @@
+{
+    "name": "fireguard/correios",
+    "description": "Utilities for interaction with the post office of Brazil",
+    "keywords": ["correios"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "symfony/dom-crawler": "^3.2",
+        "fabpot/goutte": "^3.2",
+        "symfony/http-foundation": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fireguard\\Correios\\": "src/"
+        }
+    }
+}
